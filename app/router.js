@@ -10,5 +10,5 @@ module.exports = app => {
   router.get('/user/info', controller.user.userInfo);
   router.post('/user/login', controller.user.userLogin);
   router.post('/user/register', controller.user.userRegister);
-  router.get('/wireguard/cmd', controller.wireGuard.setCMDInfo);
+  router.get('/wireGuard/cmd', controller.wireGuard.setCMDInfo);
 };

@@ -7,7 +7,9 @@ class WireGuardController extends Controller {
   async setCMDInfo() {
     const { ctx, app } = this;
     try {
-      const res = await childProcess.exec('dir');
+      const res = await childProcess.exec('ll',{
+        shell: 'bash',
+      });
       console.log(res);
       ctx.body = res;
     } catch (e) {
